@@ -1,0 +1,10 @@
+asset bundle.js 10.9 KiB [emitted] [minimized] (name: main) 1 related asset
+asset index.html 296 bytes [emitted]
+modules by path ./node_modules/react/ 16.6 KiB       
+  ./node_modules/react/index.js 186 bytes [built] [code generated]
+  ./node_modules/react/cjs/react.production.js 16.5 KiB [built] [code generated]
+modules by path ./node_modules/react-dom/ 7.83 KiB   
+  ./node_modules/react-dom/index.js 1.33 KiB [built] [code generated]
+  ./node_modules/react-dom/cjs/react-dom.production.js 6.5 KiB [built] [code generated]
+./src/index.js 176 bytes [built] [code generated]    
+webpack 5.98.0 compiled successfully in 2053 ms   
