@@ -1,0 +1,79 @@
+/* Footer.css */
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footerContainer {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;  /* Para que se ajuste en pantallas pequeñas */
+    padding: 0 20px; /* Agregado padding lateral para evitar que el contenido toque los bordes */
+  }
+  
+  
+  .copyright {
+      width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+      order: 2;      /* Aparece al final en pantallas pequenas */
+      margin-top: 10px; /* Espacio arriba del copyright */
+  }
+  
+  .contactInfo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin-bottom: 10px; /* Agregado margen inferior */
+    order: 3;  /*  Orden para pantallas pequeñas */
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+  }
+  
+  .footerContainer a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .contactInfo a:hover {
+    text-decoration: underline;
+  }
+  
+  .socialIcons {
+    display: flex; /* Para alinear los iconos horizontalmente */
+    gap: 15px;      /* Separación entre los iconos */
+    order: 1;    /*  Los iconos primero en pantallas pequenas */
+  }
+  
+  .socialIcons a {
+    color: #333;
+    font-size: 1.4em; /* Aumentado el tamaño de los iconos */
+    text-decoration: none; /* Quita el subrayado */
+    transition: color 0.2s ease; /* Transición suave al cambiar de color */
+  }
+  
+  .socialIcons a:hover {
+    color: #555;
+  }
+  
+  /* Media query para pantallas más grandes (tablets y escritorio) */
+  @media (min-width: 768px) {
+    .copyright {
+        width: auto; /* Ancho automatico */
+        order: 0; /* Orden por defecto */
+        margin-top: 0; /* Quita el margen superior en pantallas grandes */
+    }
+      .footerContainer {
+          width: auto;
+          order: 0;
+          margin-bottom: 0; /* Quitamos el margen inferior en pantallas grandes */
+      }
+      .socialIcons{
+          order: 0;
+      }
+  }

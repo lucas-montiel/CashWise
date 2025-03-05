@@ -1,0 +1,85 @@
+.itemList {
+  list-style: none;
+  padding: 1rem;
+  /*background-color: #ffe6e6;*/ /* fondo rojo suave */
+  margin: 0; /* quitar márgenes */
+  height: 100vh; /* ocupar el 100% del alto de la pantalla */
+  box-sizing: border-box; /* incluir bordes y padding en el ancho total */
+}
+
+.itemEgreso {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: 1px solid #000; /* borde negro fino */
+  border-radius: 5px; /* bordes redondeados */
+  padding: 0.5rem; /* separación mínima en la parte inferior */
+  background-color: #fe8383;
+}
+
+.itemIngreso {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: 1px solid #000; /* borde negro fino */
+  border-radius: 5px; /* bordes redondeados */
+  padding: 0.5rem; /* separación mínima en la parte inferior */
+  background-color: #a2fdb6;
+}
+
+.itemImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.itemDetails {
+    flex-grow: 1;
+    flex-shrink: 0;
+    white-space: nowrap; /* Evita que el texto se envuelva */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.itemTitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    white-space: nowrap; /* Evita que el texto se envuelva */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 250px; /* tamaño fijo */
+}
+
+.itemPrice {
+    margin-bottom: 0.5rem;
+    white-space: nowrap; /* Evita que el texto se envuelva */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.itemLink {
+    text-decoration: none;
+    color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap; /* Evita que el texto se envuelva */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.addButton{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
